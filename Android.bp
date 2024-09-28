@@ -14,7 +14,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwifi-hal-mtk.so"],
 		},
 	},
@@ -93,15 +93,6 @@ prebuilt_etc_xml {
 	name: "android.hardware.wifi.hostapd.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.wifi@1.0-service.xml",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
